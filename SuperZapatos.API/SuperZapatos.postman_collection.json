@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "abab8b39-309d-45b5-b292-f8ffda2f50e9",
+		"name": "SuperZapatos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Articles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"lavatrastes\",\r\n    \"Description\":\"lavatrastes automatico\",\r\n    \"Price\":\"1199\",\r\n    \"Total_in_shelf\":44,\r\n    \"Total_in_vault\":100,\r\n    \"Store_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7033/services/Articles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Articles/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"cortina de 1-2.5 mts\",\r\n    \"Description\":\"Cortina para recamara\",\r\n    \"Price\":\"199\",\r\n    \"Total_in_shelf\":44,\r\n    \"Total_in_vault\":100,\r\n    \"Store_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7033/services/Articles/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Articles/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetArticlesByStoreId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Articles/stores/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Articles",
+								"stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stores",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Stores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Tienda para eliminar\",\r\n    \"Address\":\"Av las torres 123\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7033/services/Stores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Stores/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Tienda Reforma\",\r\n    \"Address\":\"Av reforma 264\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7033/services/Stores/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7033/services/Stores/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7033",
+							"path": [
+								"services",
+								"Stores",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
